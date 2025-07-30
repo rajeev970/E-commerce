@@ -6,7 +6,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const port = process.env.PORT || 3000;
 
-var routes = require("../Backend/Routes/index");
+var routes = require("./Routes/index");
 app.use(express.json());
 app.use('/auth',routes);
 app.listen(port ,()=>{
